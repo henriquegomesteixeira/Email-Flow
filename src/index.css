@@ -1,3 +1,31 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Estilizando a largura da barra de rolagem */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Estilizando a cor do track da barra de rolagem para o modo light */
+::-webkit-scrollbar-track {
+  background: #F4F4F5; /* Cor do modo light do Tailwind CSS */
+}
+
+/* Estilizando a cor do track da barra de rolagem para o modo dark */
+.dark ::-webkit-scrollbar-track {
+  background: #27272A; /* Cor do modo dark do Tailwind CSS */
+}
+
+/* Estilizando o thumb (a "bolinha" da barra de rolagem) para o modo light */
+::-webkit-scrollbar-thumb {
+  background-color: #cbd5e0; /* Cor do modo light do Tailwind CSS */
+  border-radius: 4px;
+  border: 2px solid #F4F4F5; /* Cor do modo light do Tailwind CSS */
+}
+
+/* Estilizando o thumb (a "bolinha" da barra de rolagem) para o modo dark */
+.dark ::-webkit-scrollbar-thumb {
+  background-color: #a0aec0; /* Cor do modo dark do Tailwind CSS */
+  border: 2px solid #27272A; /* Cor do modo dark do Tailwind CSS */
+}
