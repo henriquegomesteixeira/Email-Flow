@@ -1,3 +1,5 @@
+import colors from "tailwindcss/colors"
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -5,7 +7,12 @@ module.exports = {
     "src/**/*.{js,jsx,ts,tsx}"
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        background: colors.zinc,
+        primaryColor: colors.emerald,
+      },
+    },
   },
   plugins: [],
   darkMode: "class",
